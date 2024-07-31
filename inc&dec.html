@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <style>
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            background-color: blue;
+            height: 300px;
+            width: 422px;
+        }
+        .card-title{
+            color: #fff;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .card1{
+            background-color: darkblue;
+            z-index: 1;
+            width: 419px !important;
+            height: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+                <div class="card1" style="width: 25rem;">
+                    <div class="card-body">
+                      <h1 class="card-title" id="result"></h1>
+                    </div>
+                    <div class="buttons">
+                    <button class="btn btn-primary" id="increment"><i class="fa fa-plus text-light" aria-hidden="true"></i></button>
+                    <button class="btn btn-outline-primary" id="reset"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary" id="decrement"><i class="fa fa-minus text-light" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <footer>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <script src="./js/script.js" ></script>
+    </footer>
+</body>
+</html>

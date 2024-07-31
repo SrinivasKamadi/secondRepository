@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #5c5cdd;
+    }
+    .numberguess {
+      margin: 120px 400px;
+
+      padding: 50px 0px;
+    }
+    .numberguess .cards {
+      margin: auto;
+      text-align: center;
+      background-color: white;
+    }
+    .numberguess h5.heading {
+      background-color: #090972;
+      padding: 8px;
+      color: white;
+    }
+    .numberguess h6.guess {
+      color: blue;
+    }
+    .numberguess button.number {
+      padding: 5px 50px;
+      border-radius: 10px;
+    }
+    .numberguess h6.bguesses {
+      box-shadow: 0px 0px 11px 0px #c8bcdd;
+      border-radius: 4px;
+      margin: 20px 20px;
+      padding: 5px 10px;
+    }
+  </style>
+  <body>
+    <div class="container pt-5">
+      <div class="row justify-content-center p-5">
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-body shadow p-4 bg-white rounded">
+              <h5 class="card-title pt-0 text1">Number Guessing Game</h5>
+              <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="p-2 bd-highlight text2">
+                  Guees a number between 1-100
+                </div>
+                <div class="p-2 bd-highligh">
+                  <input type="text" class="text4" id="userGuess" />
+                </div>
+                <div class="p-2 bd-highlight">
+                  <button type="button" class="btn btn-primary button" id="btn">
+                    GUEES
+                  </button>
+                </div>
+                <div
+                  class="p-2 bd-highlightshadow p-4 bg-white rounded box"
+                  id-="output"
+                >
+                  <h6>Gueesed number are:12</h6>
+                  <h6>
+                    No.of gueeses:
+                    <h6 id="no_of_guesses"></h6>
+                  </h6>
+                </div>
+                <div class="p-2 bd-highlight text3" id="output"></div>
+                <div class="p-2 bd-highlight text3" id="guessedNumbers"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/guess.js"></script>
+  </footer>
+</html>
